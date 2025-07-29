@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 
 // Define the benefit item type
 type BenefitItem = {
-  icon: any;
+  icon: React.FC<React.SVGProps<SVGSVGElement>>;
   stat: string;
   title: string;
   cornerStyle?: string;

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
@@ -11,8 +11,8 @@ const PainPointsSection = () => {
   ];
 
   return (
-    <section className="section-padding bg-muted/20 py-16 px-4 md:px-8 lg:px-12"> {/* Add horizontal padding */}
-      <div className="max-w-7xl mx-auto"> {/* Ensure it's centered and not stretched */}
+    <section className="section-padding bg-muted/20 py-16 px-4 md:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           <div className="space-y-8">
@@ -36,8 +36,7 @@ const PainPointsSection = () => {
           </div>
           
           <div className="flex justify-center">
-            <div className="bg-destructive/10 p-8 rounded-2xl border-2 border-destructive/20 max-w-md relative"> {/* Set relative position for the ShineBorder */}
-              {/* Apply ShineBorder only to this card */}              
+            <div className="bg-destructive/10 p-8 rounded-2xl border-2 border-destructive/20 max-w-md relative">
               <h3 className="text-2xl font-bold font-poppins text-destructive mb-4">
                 The Hidden Cost
               </h3>
@@ -45,7 +44,7 @@ const PainPointsSection = () => {
                 Coaches waste <span className="font-bold">15-20 hours per week</span> on unqualified leads.
               </p>
               <p className="text-sm text-muted-foreground">
-                That's $2,000-5,000 in lost revenue monthly!
+                That&rsquo;s $2,000-5,000 in lost revenue monthly!
               </p>
             </div>
           </div>

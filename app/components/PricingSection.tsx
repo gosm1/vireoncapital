@@ -1,6 +1,5 @@
 'use client'
 import { Check, Sparkles } from "lucide-react";
-import { cn } from '@/lib/utils';
 import { motion } from "framer-motion";
 
 const PricingSection = () => {

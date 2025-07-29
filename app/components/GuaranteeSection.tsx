@@ -1,22 +1,21 @@
-'use client'
+'use client';
 import { motion } from "framer-motion";
-import { Shield, Clock, Wrench } from "lucide-react";  // Changed icons
-import { cn } from '@/lib/utils';
+import { Shield, Clock, Wrench } from "lucide-react";
 import { JSX } from "react";
 
 const guarantees = [
   {
-    icon: <Clock className="h-8 w-8" />,  // Using Clock icon for "30-Day Results"
+    icon: <Clock className="h-8 w-8" />,
     title: "30-Day Results",
     description: "See improvement in your first month"
   },
   {
-    icon: <Wrench className="h-8 w-8" />,  // Using Wrench icon for "Free Optimization"
+    icon: <Wrench className="h-8 w-8" />,
     title: "Free Optimization",
-    description: "We'll keep working until it's perfect"
+    description: "We&apos;ll keep working until it&apos;s perfect"
   },
   {
-    icon: <Shield className="h-8 w-8" />,  // Using Shield icon for "Zero Risk"
+    icon: <Shield className="h-8 w-8" />,
     title: "Zero Risk",
     description: "Your investment is protected"
   }
@@ -40,7 +39,9 @@ const GuaranteeCard = ({ guarantee }: { guarantee: { icon: JSX.Element, title: s
       <h4 className="font-geist text-lg font-bold tracking-tighter text-black group-hover:text-primary-foreground transition-colors duration-300">
         {guarantee.title}
       </h4>
-      <p className="text-muted-foreground group-hover:text-primary-foreground/80 transition-colors duration-300">{guarantee.description}</p>
+      <p className="text-muted-foreground group-hover:text-primary-foreground/80 transition-colors duration-300">
+        {guarantee.description}
+      </p>
     </motion.div>
   );
 };
@@ -68,7 +69,7 @@ const GuaranteesSection = () => {
             Your Success Is Guaranteed
           </motion.h2>
           <p className="text-muted-foreground mx-auto max-w-2xl text-center text-pretty text-lg">
-            If we don't reduce your unqualified leads by at least <span className="font-bold text-primary">50% within 30 days</span>, we'll optimize the system for free until it performs.
+            If we don&rsquo;t reduce your unqualified leads by at least <span className="font-bold text-primary">50% within 30 days</span>, we&rsquo;ll optimize the system for free until it performs.
           </p>
         </div>
 

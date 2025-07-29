@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils';
 
 // Define the service item type
 type ServiceItem = {
-  icon: any;
+  icon: React.FC<React.SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
   position?: 'left' | 'right';
